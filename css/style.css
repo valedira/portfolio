@@ -1,0 +1,357 @@
+
+/*imports fonts from fonts.css file*/
+@import url(fonts.css);
+
+/*CSS Variables*/
+@import url(./parsials/variables.css);
+
+/*import global styling*/
+@import url(./parsials/global.css);
+
+/*start navigation*/
+
+header, section.site-banner{
+    background: rgb(233, 189, 107);
+    padding-bottom: 2rem;
+    padding-top: 0px;
+}
+
+
+.header-area .main-menu .navbar .navbar-brand{
+    padding: 0 10rem 0.5rem ;
+}
+
+.header-area .main-menu .navbar{
+    padding: 2px 0px 0px;
+    margin: 24px;
+}
+.header-area .main-menu .nav-item .nav-link{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+.header-area .main-menu .navbar-nav .active a{
+    background: var(--primary-color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-clip: text;
+
+}
+.header-area .main-menu .navbar-nav a:hover{
+    background: var(--primary-color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    background-clip: text;
+
+}
+.navbar-brand  {
+    font: normal 25px/ 49px "Lato","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+a.navbar-brand{
+    line-height: inherit;
+}
+.home-title-color{
+    color: var(--primary-color2);
+}
+
+.show{
+    right: 0;
+}
+
+/*end navigation*/
+
+ 
+/*Banner area*/
+
+
+
+.site-main .site-banner {
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 5%;
+    font-weight: 550;
+    color: #ffffff;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 18rw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.site-main .site-banner .site-title h2{
+    font-size: 2rem;
+    color: #ffffff;
+}
+/*End Banner Area*/
+
+/*start About Area*/
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-2em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+    
+.site-main .about-area .about-title h2 >span{
+    display: block;
+    font: normal bold 35px/ 59px var(--maison);
+    letter-spacing: 6px;
+}
+.site-main .about-area .about-title .paragraph{
+    padding: .4rem 0;
+}
+
+.site-main .about-area .about-title p{
+    padding: 1rem 0rem;
+}
+
+
+/*End About Area*/
+
+
+
+/*start service Area*/
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title{
+    padding: 0.14rem;
+}
+
+.site-main .services-area .services-title h1{
+    font-size: 35px;
+    
+}
+
+.card-deck{
+    padding-top: 3rem;
+}
+.service-area{
+    padding: 30px 0px;
+}
+.service-container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    padding-bottom: 30px;
+    margin-left: 200px;
+   
+}
+
+.service-container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow) ;
+    transition: 0.3s ease-in-out;
+    background: var(--primary-color2);
+}
+
+.service-container .card:hover{
+    height: 420px;
+}
+.service-container .card .card-img-top{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: var(--box-shadow);
+
+}
+.service-container .card .card-img-top .img{
+    max-width: 100%;
+    border-radius: 4px;
+
+}
+.service-container .card .card-body{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.service-container .card:hover .card-body{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s ;
+}
+
+/*End service Area*/
+/*Project Area*/
+
+.site-main .project-area{
+    padding: 2rem 0;
+}
+
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+.site-main .project-area .button-group .button + button{
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project + title h4{
+    font: normal 700 25px/ 12px var(--maison);
+}
+
+.project-area .element-item{
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.project-area .img{
+    padding-top: 2rem ;
+    max-width: 200px;
+    height: 400px;
+    object-fit: fill;
+    transition: 1s;
+    cursor: pointer;
+}
+.project-area .img:hover{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+    transform: scale(1.1);
+}
+.project-area .container{
+    row-gap: 8rem;
+    
+}
+/*End Project Area*/
+
+/*About me*/
+
+.site-main .about-area .card{
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.15rem;
+}
+.card-title{
+    padding-top: 1rem;
+}
+.site-main .about-area h5{
+    font: normal 500 21px/ 20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.site-main .about-area p{
+    font-size: 14px;
+}
+
+/*subscribe me*/
+
+.site-main .subscribe-us-area{
+    background: var(--title-color) no-repeat;
+    padding: 10rem 0;
+    margin: 3rem auto;
+}
+.site-main .subscribe-us-area .subscribe .subscribe-title h4{
+    font: normal 700 30px/ 30px var(--maison);
+    color: whitesmoke;
+}
+.site-main .subscribe-us-area .subscribe .subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+.site-main .subscribe-us-area .subscribe form .input-textbox input{
+    width: 350px;
+    padding: 1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: white;
+    font: normal 550 17px/20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button{
+    background: whitesmoke;
+    color: var(--primary-color2);
+    padding: .7rem 1rem;
+    font-size: medium;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Footer Area*/
+footer.footer-area{
+    padding: 5rem 0;
+    background: var(--primary-color2);
+}
+footer.footer-area h3{
+    font:  normal 25px/ 49px "Lato","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+footer.footer-area .social h5{
+    font: normal 550 23px/ 30px var(--maison);
+    color: whitesmoke;
+}
+footer.footer-area .social a{
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--title-color);
+}
+footer.footer-area .social a:hover{
+    color: whitesmoke;
+}
+footer.footer-area p{
+    color: #919496;
+}      
